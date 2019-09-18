@@ -33,9 +33,9 @@ class Recipe extends React.Component < { name: string, image: string, introducti
     }
     return (
 
-      <div className="recipe-card" key={this.props.key}>
+      <div className="recipe-card col-xs-12 col-sm-3" key={this.props.key}>
         <div
-          className="recipe-item col-xs-12 col-sm-6 col-md-4"
+          className="recipe-item "
           onClick={()=>this.handleClickRecipe()}
           >
           <p>{this.props.name}</p>
